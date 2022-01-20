@@ -13,7 +13,7 @@ public class HerokuApplication {
     @RequestMapping("/")
     @ResponseBody
     String home(){
-        return "<h1>Hello</h1>";
+        return "<h1 bgcolor='blue'>Hello</h1>";
 
         //int[] num= {1,2,3};
         //return num;
