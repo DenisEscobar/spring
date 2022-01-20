@@ -12,8 +12,9 @@ public class HerokuApplication {
 
     @RequestMapping("/im")
     @ResponseBody
-    String home(){
-        return "Hello World!!!";
+    int[] home(){
+        int[] num= {1,2,3};
+        return num;
     }
     public static void main(String[] args) {
         SpringApplication.run(HerokuApplication.class, args);
