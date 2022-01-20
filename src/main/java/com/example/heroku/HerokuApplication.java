@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @SpringBootApplication
 public class HerokuApplication {
 
-    @RequestMapping("/im")
+    @RequestMapping("/imprimirarray")
     @ResponseBody
     int[] home(){
         int[] num= {1,2,3};
