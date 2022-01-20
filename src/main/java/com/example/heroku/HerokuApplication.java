@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @SpringBootApplication
 public class HerokuApplication {
 
-    @RequestMapping("/imprimirarray")
+    @RequestMapping("/")
     @ResponseBody
-    int[] home(){
-        int[] num= {1,2,3};
-        return num;
+    String home(){
+        return "<h1>Hello</h1>";
+
+        //int[] num= {1,2,3};
+        //return num;
     }
     public static void main(String[] args) {
         SpringApplication.run(HerokuApplication.class, args);
